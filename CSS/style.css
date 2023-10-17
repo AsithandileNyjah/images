@@ -1,0 +1,104 @@
+:root{
+    --greatColor: black
+}
+.navBar {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    position: fixed;
+}
+.navBar a {
+    text-decoration: none;
+    border: solid black;
+    text-align: center;
+    background-color: burlywood;
+}
+@media screen and (max-width:700px){
+    background-color: var(--greatColor);
+}
+#button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: burlywood;
+    color: whitesmoke;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "block1 block2 block3"
+    "block4 block5 block6"
+    "block7 block8 block9"
+    ;
+}
+#sec1 {
+    grid-area: block1;
+}
+#sec2 {
+    grid-area: block3;
+}
+#sec3 {
+    grid-area: block5;
+}
+#sec4 {
+    grid-area: block7;
+}
+#sec5 {
+    grid-area: block9;
+}
+h2 {
+    font-family: sofia;
+}
+@keyframes colorChanger {
+    from {
+        background-color: whitesmoke;
+    }
+    to {
+        background-color: cadetblue;
+    }
+}
+h4 {
+    background-color: whitesmoke;
+    animation-name: movement;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes movement {
+    0% {
+        background-color: darkgoldenrod;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: red;
+        left: 500px;
+        top: 0px;
+    }
+    50% {
+        background-color: crimson;
+        left: 500px;
+        top: 500px;
+    }
+    75% {
+        background-color: darkgoldenrod;
+        left: 0px;
+        top: 500px;
+    }
+    100% {
+        background-color: purple;
+        left: 0px;
+        top: 0px;
+    }
+}
+h4 {
+    border: solid blue;
+}
